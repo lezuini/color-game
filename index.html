@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the color</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+  </head>
+  <body>
+    <div class="game" id="game">
+      <div class="container">
+        <div class="title">
+          <h1>Guess the color!</h1>
+        </div>
+
+        <div class="panel">
+          <div class="color">
+            <span>The color is:</span>
+            <span class="rgb"></span>
+          </div>
+
+          <div class="options">
+            <div class="mode" id="clue">Clue</div>
+            <div class="mode" id="reset">Reset</div>
+            <div class="difficulty">
+              <div class="mode selected" id="easy">Easy</div>
+              <div class="mode" id="medium">Medium</div>
+              <div class="mode" id="hard">Hard</div>
+            </div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="colour-selection">
+          <div class="selection">
+            <input type="button" class="option" />
+            <input type="button" class="option" />
+            <input type="button" class="option" />
+            <input type="button" class="option" />
+            <input type="button" class="option" />
+            <input type="button" class="option" />
+          </div>
+        </div>
+        <div class="output">
+          <div class="result"></div>
+          <div class="correct">
+            Successful times in a row: <span class="streak">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="instructions">
+      <h2>How to play this game?</h2>
+      <p>
+        This game is quite simple, at the top the color that you must guess will
+        appear in
+        <a
+          href="https://en.wikipedia.org/wiki/RGB_color_model"
+          target="_blank"
+          rel="noopener noreferrer"
+          >RGB format</a
+        >, at the bottom you will have 6 boxes with different colors, if you
+        select the color that agrees with the RGB notation you win 1 point.
+      </p>
+      <p>
+        If you make a mistake when choosing the color, don't worry! You just
+        lose all your points!
+      </p>
+      <p>
+        If you doubt which color to choose, you can use the
+        <a href="#game">"hint"</a> button and it will reveal the correct color
+        for a moment, in exchange for 1 point.
+      </p>
+      <p>
+        If the color gamut is very similar, or you don't think you can guess
+        correctly, you can reset the gamut by pressing the
+        <a href="#game">"reset"</a> button and this will cause the colors to
+        change. But be careful, you can only do it once each time you earn a
+        point. Choosing this option does not take away points.
+      </p>
+      <p>
+        Finally, if what you like are challenges, you can increase the
+        difficulty in the buttons with the levels (quite obvious, right?).
+        Changing the difficulty removes all the points earned, and in the most
+        difficult difficulty, you will have a time limit of 8 seconds to answer,
+        if you do not guess the color in that time, you will lose all your
+        points!
+      </p>
+      <p>
+        That's it, how many points in a row will you be able to score? Try it!
+      </p>
+    </div>
+    <div class="credits">
+      <h2>Do you like the game or have you encountered a problem?</h2>
+      <p>Let me know via twitter!</p>
+      <p>
+        Send me a message or tweet me:
+        <a
+          href="https://twitter.com/leonardomeza87"
+          target="_blank"
+          rel="noopener noreferrer"
+          >@leonardomeza87</a
+        >
+      </p>
+      <p>
+        The source code for this program is published in a public repository on
+        <a
+          href="https://github.com/leonardomeza87/color-game"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >.
+      </p>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
