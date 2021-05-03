@@ -136,7 +136,8 @@ h1 {
   cursor: pointer;
   transition: background 0.2s;
 }
-.mode:hover {
+.mode:hover,
+.modeC {
   background-color: var(--hover);
 }
 
